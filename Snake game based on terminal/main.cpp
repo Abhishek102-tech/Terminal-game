@@ -11,7 +11,10 @@ int main(){
     int columns,rows;
 
     columns= csbi.srWindow.Right - csbi.srWindow.Left + 1;
-    rows= csbi.srWindow.Bottom - csbi.srWindow.Top + 1;  
+    rows= csbi.srWindow.Bottom - csbi.srWindow.Top + 1;
+    
+    char player[]={"O"};
+    int position[2]={0,0};
 
     while(true){
 
@@ -27,5 +30,5 @@ bool gameEnd(int position[2]){
 
 }
 void foodChange(char food,int foodposition[2]){
-    
+
 }
