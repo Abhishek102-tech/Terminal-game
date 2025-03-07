@@ -2,6 +2,7 @@
 #include <windows.h>
 #include <ctime>
 
+void createBoard(int columns,int rows);
 void playerMove(char player[],int position[2]);
 bool gameEnd(int position[2]);
 void foodChange(char food,int foodposition[2]);
@@ -25,6 +26,14 @@ int main(){
     
     return 0;
 }
+
+void createBoard(int columns,int rows){
+    for(int i=0;i<columns;i++){
+        for(int j=0;j<rows;j++){
+                std::cout<<" ";
+            }
+        }
+    }
 
 void playerMove(char player[],int position[2]){
 
