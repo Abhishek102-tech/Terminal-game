@@ -1,5 +1,6 @@
 #include <iostream>
 #include <windows.h>
+#include <ctime>
 
 void playerMove(char player[],int position[2]);
 bool gameEnd(int position[2]);
@@ -15,6 +16,8 @@ int main(){
     
     char player[]={"O"};
     int position[2]={0,0};
+
+    int foodposition[2]={rand()%columns,rand()%rows};
 
     while(true){
 
